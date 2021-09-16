@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./images/avatar.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel</title>
+</head>
+
+<body class="text-gray-800">
+
+  <div class="min-h-screen">
+    <header class="h-12 flex absolute top-0 inset-x-0">
+      <div class="w-72 h-full bg-indigo-400 flex justify-center items-center border-r border-indigo-300">
+        <div class="text-sm font-semibold text-center text-gray-800 tracking-wide">
+          Admin-panel <span class="text-gray-300">@bakosyy</span>
+        </div>
+      </div>
+      <nav class="bg-indigo-400 flex-grow border-l border-indigo-300">
+
+      </nav>
+    </header>
+
+    <div class="flex items-stretch min-h-screen pt-12">
+      <!-- Menus -->
+      <aside class="w-72 flex-shrink-0 bg-indigo-500 space-y-2.5 text-gray-100 font-sans">
+
+        <div class="px-6 py-3 text-gray-200 mt-4 space-x-2">
+          <img src="../images/avatar.jpg" alt="avatar" class="w-12 h-12 rounded-full inline">
+          <div class="inline-block max-h-1 text-gray-300 font-medium">Bakytzhan Kozhabayev</div>
+        </div>
+
+        <div class="h-1.5 bg-indigo-600"></div>
+
+        <!-- Sidebar navigation links -->
+        <ul class="space-y-2 px-5 py-3">
+          <li><a class="block px-5 py-2 bg-gray-200 text-gray-600 font-medium rounded" href="#">
+              Dashboard
+            </a></li>
+          <li><a class="block px-5 py-2 text-gray-200 font-medium hover:bg-indigo-400 rounded" href="#">
+              Articles
+            </a></li>
+          <li><a class="block px-5 py-2 text-gray-200 font-medium hover:bg-indigo-400 rounded" href="#">
+              Categories
+            </a></li>
+          <li><a class="block px-5 py-2 text-gray-200 font-medium hover:bg-indigo-400 rounded" href="#">
+              Tags
+            </a></li>
+        </ul>
+
+        <!-- <div class="h-1 bg-indigo-600"></div> -->
+
+      </aside>
+
+      <!-- Page content -->
+      <main class="w-auto flex-grow p-10 bg-gray-200">
+
+        <section class="bg-gray-100 py-4 px-3 space-y-4 border-t-4 border-indigo-500 shadow-md">
+          <!-- Page title -->
+          <h1 class="text-2xl font-semibold tracking-wide text-gray-600">Categories</h1>
+          <button class="bg-green-500 text-green-50 px-4 py-1 rounded">Add new</button>
+
+          <table class="min-w-full border-2 border-gray-300 divide-y divide-gray-300">
+            <thead class="bg-gray-200 uppercase">
+              <tr>
+                <th class="text-left px-3 py-2 font-medium text-sm">ID</th>
+                <th class="text-left px-3 py-2 font-medium text-sm">Name</th>
+                <th class="text-left px-3 py-2 font-medium text-sm">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-300">
+              <tr>
+                <td class="px-3 py-2 text-sm">1</td>
+                <td class="px-3 py-2 text-sm">Category 1</td>
+                <td class="px-3 py-2 text-sm">
+                  <button class="bg-yellow-500 px-4 py-1 rounded text-yellow-50">Edit</button>
+                  <button class="bg-red-400 px-4 py-1 rounded text-red-50">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+      </main>
+
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
