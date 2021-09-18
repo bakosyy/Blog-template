@@ -16,12 +16,19 @@ module.exports = {
                 blueGray: colors.blueGray,
                 "darkBlue-1": "#23384e",
                 "darkBlue-2": "#0d2235",
+            },
+            fontFamily: {
+                'arch': ['Architects Daughter', 'Open Sans']
             }
         },
+        
     },
     variants: {
         extend: {
+            
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/line-clamp'),
+    ],
 }
