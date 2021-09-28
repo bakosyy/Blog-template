@@ -10,8 +10,8 @@
   <script type="module" src="/main.js"></script>
 </head>
 
-<body class="text-gray-800">
-
+<body>
+  <div class="relative h-full min-h-screen text-gray-800">
   <!-- Header -->
   <header class="bg-darkBlue-2 py-5 shadow-sm">
     <div class="container mx-auto max-w-7xl text-gray-50">
@@ -46,7 +46,7 @@
     </div>
   </nav>
 
-  <main class="bg-gray-100 pb-20">
+  <main class="bg-gray-100 min-h-screen">
     <div class="container mx-auto max-w-5xl bg-white py-14 px-24 border border-t-0 border-gray-300 space-x-6">
 
       <div class="shadow-xl bg-white ">
@@ -59,13 +59,33 @@
             <a href="#" class="text-sm border border-indigo-500 text-indigo-500 px-4 py-1.5 font-bold">#tag-1</a>
             <a href="#" class="text-sm border border-indigo-500 text-indigo-500 px-4 py-1.5 font-bold">#tag-2</a>
           </div>
+          <!-- Comments -->
+          <h2 class="pt-8 pl-1 text-xl font-semibold text-gray-600">Comments(1)</h2>
+          <div class="h-px w-32 bg-gray-400 mt-2 mb-2"></div>
+
+          <div class="mb-4">
+            <form action="#">
+              <textarea type="text" class="w-full bg-gray-200 outline-none py-2 px-2" rows="1" placeholder="Leave a comment"></textarea>
+            </form>
+            <div><a href="#" class="font-bold text-blue-400">Log in</a> to write a comment</div>
+          </div>
+          <div id="comments" class="divide-y-2 space-y-4">
+            <div>
+              <div class="font-bold text-lg">Bako brow <span class="font-normal text-sm italic">* 1 minute ago</span></div>
+              <div class="pl-2 text-sm">What do you mean my man?</div>
+            </div>
+          </div>
+          
         </div>
+
+        
       </div>
 
+      
     </div>
   </main>
 
-  <footer class="">
+  <footer class="absolute bottom-0 -inset-x-0">
     <!-- <div class="bg-darkBlue-1 py-6">
       <div class="container mx-auto max-w-7xl">
         
@@ -78,7 +98,7 @@
       </div>
     </div>
   </footer>
-
+</div>
 </body>
 
 </html>
